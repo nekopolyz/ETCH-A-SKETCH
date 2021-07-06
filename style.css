@@ -1,0 +1,54 @@
+:root {
+  --grid-cols: 16;
+  --grid-rows: 16;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+
+  color:black;
+}
+
+body {
+  background-color: #ECECEC;
+}
+#container {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-rows: repeat(var(--grid-rows), 2fr);
+  grid-template-columns: repeat(var(--grid-cols), 2fr);
+  margin-top: 5px;
+  margin-left: 500px;
+}
+
+.reset{
+  margin-left: 500px;
+  margin-top: 10px;
+  padding: 15px 32px;
+  display: inline-block;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 2px solid black; 
+  transition-duration: 0.4s;
+
+}
+.reset:hover {
+  background-color: gray; /* Green */
+  color: white;
+}
+
+.grid-item {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.color {
+  background-color: gray;
+  border:1px solid black;
+}
+
